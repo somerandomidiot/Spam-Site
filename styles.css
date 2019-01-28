@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+h1, h2, h3, h4, h5, h6, p, input, tbi {
+  font-family: 'Gaegu', cursive;
+}
+
+h1 {
+font-size: 105px;
+}
+
+h2 {
+font-size: 70px;
+}
+
+p {
+font-size: 35px;
+}
+
+button {
+width: 15%;
+}
+
+input[type = text] {
+width: 250px;
+height: 35px;
+font-size: 30px;
+text-align: center;
+}
+
+input[type = password] {
+width: 250px;
+height: 35px;
+font-size: 30px;
+text-align: center;
+}
+
+tbi {
+font-size: 25px;
+}

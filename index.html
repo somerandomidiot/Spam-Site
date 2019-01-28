@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Spam Site</title>
+
+    <link rel ="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./styles.css">
+    <script src = "./JS/alert.js"></script>
+    <script src = "./JS/useraware.js"></script>
+    <script src = "./JS/miscellaneous.js"></script>
+    <script src = "./JS/processalert.js"></script>
+    <script src = "./JS/processbrowser.js"></script>
+    <script src = "./JS/error.js"></script>
+    <script src = "./JS/signup.js"></script>
+    <script src = "./JS/login.js"></script>
+
+  </head>
+
+    <body onload = "removeverify()"><br>
+
+<center>
+<h1>Spam. Spam. Spam.</h1>
+<p>Your source for annoying people.</p>
+
+<div id = "useragrees" style = "display: block;">
+  <p style = "color: red; font-size: 25px;">Note: You agree that you are responsible for every action caused on behalf of this script.</p>
+  <button onclick = "verified()" class = "btn btn-primary btn-lg">I agree</button>
+</div>
+</center>
+
+<div id = "website" style = "display: none;"><br>
+<h4 id = "accountid"></h4>
+<p id = "error" style = "color: red;"></p>
+<hr>
+<h2>Alerts</h2>
+<tbi>How many alerts do you want? </tbi> <input type="text" id = "alertamount" class = "form-control"><br>
+<tbi>What do you want the custom message to be on the pop-ups?</tbi> <input type="text" id = "alertmessage" class = "form-control" style = "width: 30%"><br>
+
+<button class = "btn btn-info btn-lg" onclick = "processalert()">Submit</button><br>
+<hr>
+
+<div id = "spambrowserdiv" style = "display: none;">
+
+<center><tbi>Note: For the spamming to work correctly, you have to have your browser to allow spam tabs, on Chrome, when you press submit,
+it'll only bring 1 tab up, so go back to this page, in the top right of your URL box it'll show popup blocked,
+click it then go from there.</tbi></center><br>
+<hr>
+
+<h2>Tabs</h2>
+<tbi>How many tabs do you want? </tbi> <input type="text" id = "browseramount" class = "form-control"><br>
+<tbi>What links do you want these tabs to go to (Note: These links must include http(s) at the start.)</tbi> <input type="text" id = "url" class = "form-control" style = "width: 30%" value = "http://"><br>
+
+<button class = "btn btn-info btn-lg" onclick = "processbrowser()">Submit</button><br>
+</div>
+
+<div id = "signupdiv" style = "display: block;">
+<h2>Signup</h2>
+<tbi>Username:</tbi>
+<input type = "text" id = "signupname" class = "form-control"> <br>
+
+<tbi>Password:</tbi>
+<input type = "password" id = "signuppass" class = "form-control"><br>
+
+<button class = "btn btn-danger btn-lg" onclick = "processsignup()">Signup</button><br>
+</div>
+
+<div id = "logindiv" style = "display: none;">
+<h2>Login</h2>
+<tbi>Username:</tbi>
+<input type = "text" id = "loginname" class = "form-control"> <br>
+
+<tbi>Password:</tbi>
+<input type = "password" id = "loginpass" class = "form-control"><br>
+
+<button class = "btn btn-danger btn-lg" onclick = "processlogin()">Login</button><br>
+</div>
+</div>
+  </body>
+</html>
