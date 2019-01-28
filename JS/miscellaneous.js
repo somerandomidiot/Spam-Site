@@ -6,3 +6,7 @@ if (removed == true) {
   document.getElementById('website').style = "display: block";
 }
 }
+
+function accountid(msg) {
+document.getElementById(`accountid`).innerHTML = msg;
+}

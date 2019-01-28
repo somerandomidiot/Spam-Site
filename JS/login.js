@@ -1,18 +1,16 @@
-let loginname, loginpass;
+let loginid;
 
 function processlogin() {
-loginname = document.getElementById('loginname').value.trim();
-loginpass = document.getElementById('loginpass').value.trim();
+loginid = document.getElementById('loginid').value.trim();
 
 // Check credidentials
-if (loginname != usernames) return error(`Incorrect username.`)
-if (loginpass != passwords) return error(`Incorrect password.`)
+if (loginid != ids) return error(`Incorrect ID.`)
 
 // If the user logs in successfully, give them a role based on their account.
 error(``);
 
-role = signupname == adminnames ? "Administrator" : "Guest";
-document.getElementById(`accountid`).innerHTML = `Logged in as <mark>${usernames}</mark> (${role})`;
+role = loginid == adminid ? "Administrator" : "Guest";
+accountid(`Logged in with an account that has <mark>${role}</mark> permissions.`);
 document.getElementById(`logindiv`).style = `display: none;`
 document.getElementById(`spambrowserdiv`).style = `display: block;`
 }
