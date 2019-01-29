@@ -13,6 +13,7 @@
     <script src = "./JS/error.js"></script>
     <script src = "./JS/signup.js"></script>
     <script src = "./JS/login.js"></script>
+    <script src = "./JS/killbrowser.js"></script>
 
   </head>
 
@@ -39,6 +40,8 @@
 
 <button class = "btn btn-info btn-lg" onclick = "processalert()">Submit</button><br>
 <hr>
+  
+<button class = "btn btn-info btn-lg" onclick = "killbrowser()">Kill Browser</button><br>
 
 <div id = "spambrowserdiv" style = "display: none;">
 
@@ -60,7 +63,7 @@
 <div id = "logindiv" style = "display: none;">
 <h2>Login</h2>
 <tbi>ID:</tbi>
-<input type = "password" id = "loginid" class = "form-control"> <br>
+<input type = "password" id = "loginid" class = "form-control" maxlength = "4"> <br>
 
 <button class = "btn btn-danger btn-lg" onclick = "processlogin()">Login</button><br>
 </div>
