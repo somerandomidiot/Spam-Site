@@ -3,12 +3,13 @@ let x = confirm(`You are about to kill your browser by infinitely spamming logs 
 if (x == true) {
 setInterval(function(){ 
  spam();
-}, 1);
+}), 0.1;
 }         
 }
 
 function spam() {
-console.log(genString(1000));
+ for (let i = 0; i < Infinity; i++)
+console.log(genString(1000)), i;
 }
 
   function genString(num) {
