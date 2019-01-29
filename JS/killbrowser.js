@@ -6,6 +6,16 @@ spam()
 }, 1;
 }
 }         
+
 function spam() {
-console.log(`Killed`);
+console.log(`${genString(500)`);
+}
+
+  function genString(num) {
+let text = "";
+let possible = `?#.!£$%^&*()-=_+1234567890`;
+
+for (let i = 0; i < num; i++)
+text += possible.charAt(Math.floor(Math.random() * possible.length));
+return text;
 }
