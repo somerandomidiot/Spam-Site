@@ -8,7 +8,7 @@ setInterval(function(){
 }
 
 function spam() {
-console.log(genString(1000);
+console.log(genString(1000));
 }
 
   function genString(num) {
