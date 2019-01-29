@@ -3,7 +3,7 @@ let x = confirm(`You are about to kill your browser by infinitely spamming logs 
 if (x == true) {
 setInterval(function() {
 spam() 
-}, 1;
+)}, 1;
 }
 }         
 
