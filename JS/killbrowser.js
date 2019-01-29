@@ -1,5 +1,5 @@
 function killbrowser() {
-let x = confirm(`You are about to kill your browser by infinitely spamming logs in the console. Are you sure you want to do this?`);
+let x = confirm(`You are about to kill your browser by infinitely spamming logs in the console. It'll slow your browser down overtime therefore it isn't an instant process. Are you sure you want to do this?`);
 if (x == true) {
  for (let i = 0; i < Infinity; i++)
 console.log(genString(100000)), i;
