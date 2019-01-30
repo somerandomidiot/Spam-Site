@@ -17,10 +17,10 @@ document.getElementById(`spambrowserdiv`).style = `display: block;`
 
 function permissions() {
 alert(`Administrator:\n
-/ All Permissions and bypasses any limit\n\n
+/ All Permissions and bypasses any limit
 Guest:\n
-/ Higher limit to spam alert messages\n
-/ Unlock the "spam tab" feature\n\n
+/ Higher limit to spam alert messages
+/ Unlock the "spam tab" feature
 Not logged in: \n
 / Short limit on alert messages
 / Limited features`);
