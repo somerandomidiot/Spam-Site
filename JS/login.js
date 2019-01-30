@@ -23,5 +23,5 @@ Guest:\n
 / Unlock the "spam tab" feature\n\n
 Not logged in: \n
 / Short limit on alert messages
-/ Limited features`
-};
+/ Limited features`);
+}
