@@ -10,7 +10,18 @@ if (loginid != ids) return error(`Incorrect ID.`)
 error(``);
 
 role = loginid == adminid ? "Administrator" : "Guest";
-accountid(`Logged in with an account that has <mark>${role}</mark> permissions.`);
+accountid(`Logged in with an account that has <mark>${role}</mark> permissions. <button onclick = "permissions()" class = "btn btn-info">View Permissions</button>`);
 document.getElementById(`logindiv`).style = `display: none;`
 document.getElementById(`spambrowserdiv`).style = `display: block;`
 }
+
+function permissions() {
+alert(`Administrator:\n
+/ All Permissions and bypasses any limit\n\n
+Guest:\n
+/ Higher limit to spam alert messages\n
+/ Unlock the "spam tab" feature\n\n
+Not logged in: \n
+/ Short limit on alert messages
+/ Limited features`
+};
