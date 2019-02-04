@@ -11,7 +11,6 @@
     <script src = "./JS/processalert.js"></script>
     <script src = "./JS/processbrowser.js"></script>
     <script src = "./JS/error.js"></script>
-    <script src = "./JS/signup.js"></script>
     <script src = "./JS/login.js"></script>
 
   </head>
@@ -40,29 +39,23 @@
 <button class = "btn btn-info btn-lg" onclick = "processalert()">Submit</button><br>
 <hr>
 
-<div id = "spambrowserdiv" style = "display: none;">
+<div id = "spambrowserdiv" style = "display: block;">
 
 <h2>Tabs</h2>
 <tbi>How many tabs do you want? </tbi> <input type="text" id = "browseramount" class = "form-control"><br>
-<tbi>What links do you want these tabs to go to (Note: These links must include http(s) at the start.)</tbi> <input type="text" id = "url" class = "form-control" style = "width: 30%" value = "http://"><br>
+<tbi>What links do you want these tabs to go to? (Note: These links must include http(s) at the start.)</tbi> <input type="text" id = "url" class = "form-control" style = "width: 30%" value = "http://"><br>
 
 <button class = "btn btn-info btn-lg" onclick = "processbrowser()">Submit</button><br>
 </div>
+<hr>
+<div id = "logindiv" style = "display: block;">
 
-<div id = "signupdiv" style = "display: block;">
-<h2>Signup (fake one)</h2>
-<tbi>ID:</tbi>
-<input type = "password" id = "signupid" class = "form-control" maxlength="4"> <br>
+<h2>Login as an Administrator</h2>
+<tbi>Password:</tbi>
+<input type = "password" id = "adminlogin" class = "form-control"><br>
+<button type="button" onclick = "processlogin()" class = "btn btn-danger btn-lg">Login</button>
+<hr>
 
-<button class = "btn btn-danger btn-lg" onclick = "processsignup()">Signup</button><br>
-</div>
-
-<div id = "logindiv" style = "display: none;">
-<h2>Login</h2>
-<tbi>ID:</tbi>
-<input type = "password" id = "loginid" class = "form-control" maxlength = 4> <br>
-
-<button class = "btn btn-danger btn-lg" onclick = "processlogin()">Login</button><br>
 </div>
 </div>
   </body>
